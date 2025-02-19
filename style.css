@@ -46,11 +46,40 @@
     justify-content: center;
 }
 
+#generate-button {
+    width: 80px;
+    height: 30px;
+    background-color: #2cb05a;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+#generate-button:hover {
+    background-color: #2d9953;
+}
+
 #imageLink {
     margin: 10px;
+    display: flex;
+    align-items: center;
 }
 
 #imageLink input {
     width: 500px;
     text-align: center;
+    margin-right: 10px;
+}
+
+#copyButton {
+    width: 110px;
+    height: 30px;
+    background-color: #2cb05a;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+
+#copyButton:hover {
+    background-color: #2d9953;
 }

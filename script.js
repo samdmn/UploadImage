@@ -24,15 +24,15 @@ async function uploadImage() {
         if (data.success) {
             const imageLink = document.getElementById('imageLink');
             const inputLink = document.createElement('input');
+            const copyButton = document.createElement('button');
             inputLink.id = "input-link";
             inputLink.type = "text"; 
             inputLink.value = data.data.url;
-            imageLink.appendChild(inputLink);
-            inputLink.readOnly = true;
-            const copyButton = document.createElement('button');
+            inputLink.readOnly = "true";
             copyButton.id = "copyButton";
-            copyButton.innerHTML = "Copy link"
-            content.appendChild(copyButton);
+            copyButton.innerText = "Copy link 📋"
+            imageLink.appendChild(inputLink);
+            imageLink.appendChild(copyButton);
             copyButton.addEventListener("click", copyText);
 
         } else {
